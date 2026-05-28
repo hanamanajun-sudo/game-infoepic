@@ -1,0 +1,227 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+import Icons from '../components/Icons.astro';
+
+const allPosts = await getCollection('posts');
+
+// Sort by date descending, filter out internal test posts (no real content)
+const posts = allPosts
+  .filter(p => p.data.description && p.data.description.length > 5)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+// Gather unique categories
+const categories = [...new Set(
+  allPosts
+    .map(p => p.data.category?.split('/')[0])
+    .filter(Boolean)
+)] as string[];
+---
+<BaseLayout
+  title="게임인포에픽"
+  description="닌텐도 스위치 게임 정보, 모여봐요 동물의 숲 공략, 게임 리뷰 블로그"
+  canonical="/"
+>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-label">
+          <Icons name="gamepad" size={16} />
+          Nintendo Switch 게임 블로그
+        </p>
+        <h1 class="hero-title">게임 정보, 공략,<br />그리고 리뷰</h1>
+        <p class="hero-desc">모여봐요 동물의 숲부터 인디게임까지 — 스위치 게임 모든 것</p>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">{posts.length}</span>
+          <span class="stat-label">게임 포스트</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">{categories.length}</span>
+          <span class="stat-label">카테고리</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories strip -->
+  {categories.length > 0 && (
+    <section class="categories-strip">
+      <div class="container">
+        <div class="cats-scroll">
+          {categories.map(cat => (
+            <a href={`/category/${encodeURIComponent(cat)}`} class="cat-chip">
+              <Icons name="folder" size={14} />
+              {cat}
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Posts grid -->
+  <section class="posts-section">
+    <div class="container">
+      <h2 class="section-title">
+        <Icons name="journal" size={20} />
+        최신 포스트
+      </h2>
+      <div class="posts-grid">
+        {posts.map(post => (
+          <PostCard
+            title={post.data.title}
+            slug={post.data.slug}
+            date={post.data.date}
+            category={post.data.category}
+            description={post.data.description}
+            thumbnail={post.data.thumbnail}
+            numericId={post.data.numericId}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #2d4a7a 100%);
+  color: #fff;
+  padding-block: 3.5rem 3rem;
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .hero-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.hero-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--color-secondary);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.hero-title {
+  font-size: clamp(1.8rem, 5vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+.hero-desc {
+  color: rgba(255,255,255,0.7);
+  font-size: 1rem;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+  flex-shrink: 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-num {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.6);
+  margin-top: 0.25rem;
+}
+
+/* Categories strip */
+.categories-strip {
+  border-bottom: 1px solid var(--color-border);
+  padding-block: 0.75rem;
+  background: var(--color-bg-card);
+}
+
+.cats-scroll {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-block: 0.25rem;
+}
+
+.cats-scroll::-webkit-scrollbar { display: none; }
+
+.cat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.35rem 0.85rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+}
+
+.cat-chip:hover {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+/* Posts section */
+.posts-section {
+  padding-block: 2.5rem;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 600px) {
+  .posts-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .posts-grid { grid-template-columns: repeat(3, 1fr); }
+}
+</style>

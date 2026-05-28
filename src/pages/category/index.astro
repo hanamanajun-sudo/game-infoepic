@@ -1,0 +1,111 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Icons from '../../components/Icons.astro';
+
+const allPosts = await getCollection('posts');
+
+// Build category map: top-level → count
+const catMap = new Map<string, number>();
+for (const post of allPosts) {
+  const top = post.data.category?.split('/')[0];
+  if (top) catMap.set(top, (catMap.get(top) ?? 0) + 1);
+}
+const categories = [...catMap.entries()].sort((a, b) => b[1] - a[1]);
+---
+<BaseLayout
+  title="카테고리"
+  description="게임인포에픽의 모든 카테고리 — 닌텐도 스위치, 모여봐요 동물의 숲, 마인크래프트 등"
+  canonical="/category"
+>
+  <section class="cat-page">
+    <div class="container">
+      <h1 class="page-title">
+        <Icons name="folder" size={24} />
+        카테고리
+      </h1>
+      <div class="cat-grid">
+        {categories.map(([cat, count]) => (
+          <a href={`/category/${encodeURIComponent(cat)}`} class="cat-card">
+            <div class="cat-icon"><Icons name="folder" size={28} /></div>
+            <div class="cat-info">
+              <span class="cat-name">{cat}</span>
+              <span class="cat-count">{count}개 포스트</span>
+            </div>
+            <Icons name="arrow-right" size={16} class="cat-arrow" />
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+.cat-page { padding-block: 2.5rem; }
+
+.page-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.75rem;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+@media (min-width: 600px) {
+  .cat-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .cat-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.cat-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.cat-card:hover {
+  border-color: var(--color-secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.cat-icon {
+  color: var(--color-secondary);
+  flex-shrink: 0;
+}
+
+.cat-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.cat-name {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.cat-count {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.cat-arrow {
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+</style>

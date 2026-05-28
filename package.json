@@ -1,0 +1,21 @@
+{
+  "name": "game-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@astrojs/cloudflare": "^13.6.0",
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^6.4.2"
+  }
+}

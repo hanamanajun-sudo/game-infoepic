@@ -1,0 +1,151 @@
+---
+import Icons from './Icons.astro';
+
+const navItems = [
+  { href: '/', label: '홈', icon: 'home' as const },
+  { href: '/category', label: '카테고리', icon: 'folder' as const },
+];
+
+const { pathname } = Astro.url;
+---
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo" aria-label="게임인포에픽 홈">
+      <Icons name="gamepad" size={24} />
+      <span class="logo-text">게임<strong>인포에픽</strong></span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="주 메뉴">
+      {navItems.map(item => (
+        <a href={item.href} class:list={['nav-link', { active: pathname === item.href }]}>
+          <Icons name={item.icon} size={16} />
+          {item.label}
+        </a>
+      ))}
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기" aria-expanded="false">
+      <Icons name="menu" size={22} />
+    </button>
+  </div>
+
+  <nav class="nav-mobile" id="mobileNav" aria-label="모바일 메뉴" hidden>
+    <div class="container">
+      {navItems.map(item => (
+        <a href={item.href} class="nav-mobile-link">
+          <Icons name={item.icon} size={18} />
+          {item.label}
+        </a>
+      ))}
+    </div>
+  </nav>
+</header>
+
+<style>
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-primary);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.logo-text strong {
+  color: var(--color-secondary);
+}
+
+.nav-desktop {
+  display: none;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .nav-desktop { display: flex; }
+  .menu-toggle { display: none; }
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.8);
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+.nav-mobile {
+  background: var(--color-primary);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-block: 0.5rem;
+}
+
+.nav-mobile-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 0.5rem;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.95rem;
+  border-radius: var(--radius-md);
+  transition: background 0.15s;
+}
+
+.nav-mobile-link:hover {
+  background: rgba(255,255,255,0.1);
+}
+</style>
+
+<script>
+const toggle = document.getElementById('menuToggle');
+const nav = document.getElementById('mobileNav');
+toggle?.addEventListener('click', () => {
+  const isHidden = nav?.hasAttribute('hidden');
+  if (isHidden) {
+    nav?.removeAttribute('hidden');
+    toggle.setAttribute('aria-expanded', 'true');
+  } else {
+    nav?.setAttribute('hidden', '');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+});
+</script>

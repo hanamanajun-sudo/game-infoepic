@@ -1,0 +1,4 @@
+# Trailing slash redirects (Cloudflare Pages)
+/entry/:slug/  /entry/:slug  301
+/category/:cat/  /category/:cat  301
+/:id/  /:id  301

@@ -1,0 +1,77 @@
+---
+export interface Props {
+  headings: Array<{ depth: number; slug: string; text: string }>;
+}
+const { headings } = Astro.props;
+const filtered = headings.filter(h => h.depth === 2 || h.depth === 3);
+---
+{filtered.length > 1 && (
+  <nav class="toc" aria-label="목차">
+    <div class="toc-header">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h12M3 18h8"/></svg>
+      목차
+    </div>
+    <ol class="toc-list">
+      {filtered.map(h => (
+        <li class:list={['toc-item', { 'toc-h3': h.depth === 3 }]}>
+          <a href={`#${h.slug}`}>{h.text}</a>
+        </li>
+      ))}
+    </ol>
+  </nav>
+)}
+
+<style>
+.toc {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-secondary);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.toc-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+}
+
+.toc-list {
+  list-style: none;
+  counter-reset: toc;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.toc-item {
+  counter-increment: toc;
+}
+
+.toc-item a {
+  color: var(--color-text-muted);
+  transition: color 0.15s;
+  display: block;
+  padding: 0.15rem 0;
+  line-height: 1.4;
+}
+
+.toc-item a:hover {
+  color: var(--color-primary);
+}
+
+.toc-h3 {
+  padding-left: 1rem;
+  font-size: 0.85rem;
+}
+
+.toc-h3 a::before {
+  content: '└ ';
+  color: var(--color-border);
+}
+</style>

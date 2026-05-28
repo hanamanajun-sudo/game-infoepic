@@ -1,0 +1,114 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import Icons from '../../components/Icons.astro';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('posts');
+  const cats = new Set(
+    allPosts.map(p => p.data.category?.split('/')[0]).filter(Boolean)
+  );
+  return [...cats].map(cat => ({
+    params: { category: cat },
+    props: {
+      posts: allPosts
+        .filter(p => p.data.category?.split('/')[0] === cat)
+        .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()),
+    },
+  }));
+}
+
+const { category } = Astro.params;
+const { posts } = Astro.props;
+---
+<BaseLayout
+  title={`${category} 카테고리`}
+  description={`${category} 관련 닌텐도 스위치 게임 포스트 모음`}
+  canonical={`/category/${encodeURIComponent(category!)}`}
+>
+  <section class="cat-detail">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="경로">
+        <a href="/"><Icons name="home" size={14} /> 홈</a>
+        <Icons name="chevron-right" size={13} />
+        <a href="/category"><Icons name="folder" size={14} /> 카테고리</a>
+        <Icons name="chevron-right" size={13} />
+        <span>{category}</span>
+      </nav>
+
+      <h1 class="page-title">
+        <Icons name="folder" size={24} />
+        {category}
+        <span class="post-count">{posts.length}개</span>
+      </h1>
+
+      <div class="posts-grid">
+        {posts.map(post => (
+          <PostCard
+            title={post.data.title}
+            slug={post.data.slug}
+            date={post.data.date}
+            category={post.data.category}
+            description={post.data.description}
+            thumbnail={post.data.thumbnail}
+            numericId={post.data.numericId}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+.cat-detail { padding-block: 2rem 4rem; }
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.breadcrumb a {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  color: var(--color-text-muted);
+  transition: color 0.15s;
+}
+
+.breadcrumb a:hover { color: var(--color-primary); }
+
+.page-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.75rem;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+}
+
+.post-count {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 600px) {
+  .posts-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .posts-grid { grid-template-columns: repeat(3, 1fr); }
+}
+</style>

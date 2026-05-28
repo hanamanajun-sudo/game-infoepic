@@ -1,0 +1,202 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import TOC from '../components/TOC.astro';
+import Icons from '../components/Icons.astro';
+
+export interface Props {
+  title: string;
+  description?: string;
+  date: string;
+  category?: string;
+  tags?: string[];
+  thumbnail?: string;
+  slug: string;
+  numericId: number;
+  headings?: Array<{ depth: number; slug: string; text: string }>;
+}
+
+const { title, description, date, category, tags = [], thumbnail, slug, numericId, headings = [] } = Astro.props;
+
+const formattedDate = new Date(date).toLocaleDateString('ko-KR', {
+  year: 'numeric', month: 'long', day: 'numeric',
+});
+const isoDate = new Date(date).toISOString();
+const canonical = `/entry/${slug}`;
+const categoryTop = category?.split('/')[0] || '';
+const siteUrl = 'https://game.infoepic.com';
+
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: title,
+  description: description || '',
+  image: thumbnail ? `${siteUrl}${thumbnail}` : undefined,
+  datePublished: isoDate,
+  dateModified: isoDate,
+  author: { '@type': 'Organization', name: '게임인포에픽', url: siteUrl },
+  publisher: {
+    '@type': 'Organization',
+    name: '게임인포에픽',
+    url: siteUrl,
+    logo: { '@type': 'ImageObject', url: `${siteUrl}/favicon.svg` },
+  },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}${canonical}` },
+  keywords: tags.join(', '),
+});
+---
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={canonical}
+  ogImage={thumbnail}
+  type="article"
+  publishedTime={isoDate}
+  tags={tags}
+>
+  <script type="application/ld+json" set:html={jsonLd} slot="head" />
+
+  <article class="post-container">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="경로">
+        <a href="/"><Icons name="home" size={14} /> 홈</a>
+        <Icons name="chevron-right" size={13} />
+        {categoryTop
+          ? <a href={`/category/${encodeURIComponent(categoryTop)}`}>{categoryTop}</a>
+          : <span>전체</span>
+        }
+        <Icons name="chevron-right" size={13} />
+        <span class="current">{title}</span>
+      </nav>
+
+      <!-- Post header -->
+      <header class="post-header">
+        {categoryTop && (
+          <a href={`/category/${encodeURIComponent(categoryTop)}`} class="category-badge">
+            <Icons name="folder" size={13} />
+            {categoryTop}
+          </a>
+        )}
+        <h1 class="post-title">{title}</h1>
+        <div class="post-meta">
+          <span class="meta-date">
+            <Icons name="calendar" size={14} />
+            <time datetime={isoDate}>{formattedDate}</time>
+          </span>
+          {tags.length > 0 && (
+            <div class="meta-tags">
+              <Icons name="hashtag" size={14} />
+              {tags.map(tag => (
+                <span class="tag">{tag}</span>
+              ))}
+            </div>
+          )}
+        </div>
+      </header>
+
+      {thumbnail && (
+        <div class="post-thumbnail">
+          <img src={thumbnail} alt={title} width="740" loading="eager" />
+        </div>
+      )}
+
+      <!-- Table of Contents -->
+      <TOC headings={headings} />
+
+      <!-- Content -->
+      <div class="post-content">
+        <slot />
+      </div>
+
+      <!-- Numeric ID canonical note (hidden, for SEO) -->
+      <link rel="canonical" href={`${siteUrl}${canonical}`} />
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+.post-container {
+  padding-block: 2rem 4rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.breadcrumb a {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  color: var(--color-text-muted);
+  transition: color 0.15s;
+}
+
+.breadcrumb a:hover {
+  color: var(--color-primary);
+}
+
+.breadcrumb .current {
+  color: var(--color-text);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.post-header {
+  margin-bottom: 1.5rem;
+}
+
+.post-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--color-primary);
+  margin: 0.5rem 0 1rem;
+}
+
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.meta-date {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.meta-tags {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.post-thumbnail {
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  max-width: var(--content-max);
+}
+
+.post-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.post-content {
+  max-width: var(--content-max);
+}
+</style>
