@@ -1,4 +1,3 @@
-# Trailing slash redirects (Cloudflare Pages)
-/entry/:slug/  /entry/:slug  301
-/category/:cat/  /category/:cat  301
-/:id/  /:id  301
+# Cloudflare Pages redirects
+# Numeric ID redirects are handled by [id].astro HTML pages
+# Trailing slash is handled natively by Cloudflare Pages
