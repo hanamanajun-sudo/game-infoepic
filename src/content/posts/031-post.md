@@ -13,26 +13,18 @@ thumbnail: "/images/31/img.jpg"
 <p style="font-size: 1.12em;">저장용으로 퍼왔어요. </p>
 <p style="font-size: 1.12em;">도안은 출처로 가시면 됩니다.</p>
 <p><figure class="imageblock alignCenter" data-origin-height="506" data-origin-width="900">
-
 <img src="/images/31/img.jpg"/>
-
 <figcaption></figcaption>
 </figure></p>
 <p style="font-size: 1.12em;">완전 귀여워서 가져왔어요.</p>
 <p><figure class="imageblock alignCenter" data-origin-height="506" data-origin-width="900">
-
 <img src="/images/31/img_1.jpg"/>
-
 <figcaption></figcaption>
 </figure><figure class="imageblock alignCenter" data-origin-height="506" data-origin-width="900">
-
 <img src="/images/31/img_2.jpg"/>
-
 <figcaption></figcaption>
 </figure><figure class="imageblock alignCenter" data-origin-height="506" data-origin-width="900">
-
 <img src="/images/31/img_3.jpg"/>
-
 <figcaption></figcaption>
 </figure></p>
 <p style="font-size: 1.12em;">아래는 처음 올려져있던 글</p>

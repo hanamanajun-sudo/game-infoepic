@@ -12,7 +12,6 @@ thumbnail: "/images/16/img.jpg"
 <div class="contents_style">
 <p>너무 귀엽고 작고 소중하지만 나는 다 사기에는 오바인것 같고</p>
 <p>사진 보는 것만으로 만족하자</p>
-
 <blockquote class="instagram-media" style="background: #FFF; border: 0; border-radius: 3px; box-shadow: 0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width: 540px; min-width: 326px; padding: 0; width: calc(100% - 2px);">
 <div style="padding: 16px;"><a href="https://www.instagram.com/p/B95hfeoDtm0/?utm_source=ig_embed&amp;utm_campaign=loading" rel="noopener" style="background: #FFFFFF; line-height: 0; padding: 0 0; text-align: center; text-decoration: none; width: 100%;" target="_blank">
 <div style="display: flex; flex-direction: row; align-items: center;">
@@ -52,31 +51,21 @@ thumbnail: "/images/16/img.jpg"
 <script src="//www.instagram.com/embed.js"></script>
 <p>ｄｄ</p>
 <p><figure class="imageblock alignCenter" data-origin-height="1478" data-origin-width="1108" width="300">
-
 <img src="/images/16/img.jpg" width="300"/>
-
 <figcaption></figcaption>
 </figure></p>
 <p>이건 직접 산 초코에그 </p>
 <p><figure class="imageblock alignCenter" data-origin-height="1478" data-origin-width="1108" width="300">
-
 <img src="/images/16/img_1.jpg" width="300"/>
-
 <figcaption></figcaption>
 </figure></p>
 <p>이런식으로 달걀 만한 초코를 깨면 안에 작은 캡슐이 나온다. </p>
-
 <p><figure class="imageblock alignCenter" data-origin-height="1478" data-origin-width="1108" width="400">
-
 <img src="/images/16/img_2.jpg" width="400"/>
-
 <figcaption></figcaption>
 </figure></p>
 <p>짜잔 시크릿 나옴 ~</p>
 <p>근데 우리 딸은 동물 안나왔다고 실망 ㅎㅎ</p>
-
-
-
 <blockquote class="instagram-media" style="background: #FFF; border: 0; border-radius: 3px; box-shadow: 0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width: 540px; min-width: 326px; padding: 0; width: calc(100% - 2px);">
 <div style="padding: 16px;"><a href="https://www.instagram.com/p/B94KeAsJP-p/?utm_source=ig_embed&amp;utm_campaign=loading" rel="noopener" style="background: #FFFFFF; line-height: 0; padding: 0 0; text-align: center; text-decoration: none; width: 100%;" target="_blank">
 <div style="display: flex; flex-direction: row; align-items: center;">
@@ -118,7 +107,6 @@ thumbnail: "/images/16/img.jpg"
 </blockquote>
 <script src="//www.instagram.com/embed.js"></script>
 <p>굿굿</p>
-
 <blockquote class="instagram-media" style="background: #FFF; border: 0; border-radius: 3px; box-shadow: 0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width: 540px; min-width: 326px; padding: 0; width: calc(100% - 2px);">
 <div style="padding: 16px;"><a href="https://www.instagram.com/p/B93jZgrpukN/?utm_source=ig_embed&amp;utm_campaign=loading" rel="noopener" style="background: #FFFFFF; line-height: 0; padding: 0 0; text-align: center; text-decoration: none; width: 100%;" target="_blank">
 <div style="display: flex; flex-direction: row; align-items: center;">

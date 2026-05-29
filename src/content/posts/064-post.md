@@ -12,14 +12,11 @@ thumbnail: "/images/64/ZSIJLSGpBvuUwh68AHQreURqRF-2xvjOwo__Tm4sRy6XZQkwQ979J-lQv
 <div class="contents_style">
 <p>와이프가 딸과 함께 <span style="color: #333333; text-align: start;">닌텐도 스위치에서 </span> 추리게임을 하고 싶다고 해서 찾아보고 정리해 보았습니다.</p>
 <p>(찾아보는김에 연령별로 나눠보았어요.)</p>
-
 <p>추리게임을 우선 순위로 두고 퍼즐요소가 포함된 게임도 추가하였습니다.</p>
 <p>소개된 순서는 랭킹이 아닙니다. </p>
-
 <h3><span style="background-color: #ffc1c8;"><b>닌텐도 스위치에 즐길 수 있는 추리게임 12개</b></span></h3>
 <p style="color: #333333; text-align: start;"> </p>
 <p style="color: #333333; text-align: center;"><span style="color: #000000; background-color: #99cefa;"><u><b>[전체이용가]</b></u></span></p>
-
 <h4><span style="background-color: #dddddd;"><b>✔레이튼의 미스터리 저니: 일곱 대부호의 음모dx</b></span></h4>
 <ul style="list-style-type: disc;">
 <li>출시일: 2017년 7월 (닌텐도 스위치는 19년 3월에 발매)</li>
@@ -67,7 +64,7 @@ thumbnail: "/images/64/ZSIJLSGpBvuUwh68AHQreURqRF-2xvjOwo__Tm4sRy6XZQkwQ979J-lQv
 <p style="color: #333333; text-align: start;"> </p>
 <p style="color: #333333; text-align: start;"> </p>
 <p style="color: #333333; text-align: start;"> </p>
-<p style="color: #333333; text-align: center;"><span style="background-color: #f6e199;"><u><b>[12세 이용가]</b></u></span></p>
+<p style="color: #333333; text-align: center;"><span ><u><b>[12세 이용가]</b></u></span></p>
 <p style="color: #333333; text-align: center;"> </p>
 <h4 style="color: #333333; text-align: start;"><span style="background-color: #dddddd;"><b> ✔ 베리드 스타즈</b></span></h4>
 <ul style="list-style-type: disc;">
@@ -87,7 +84,6 @@ thumbnail: "/images/64/ZSIJLSGpBvuUwh68AHQreURqRF-2xvjOwo__Tm4sRy6XZQkwQ979J-lQv
 <p style="color: #333333; text-align: start;"> </p>
 <p style="color: #333333; text-align: center;"> </p>
 <p style="color: #333333; text-align: center;"><span style="background-color: #ffc9af;"> <u><b>[15세 이용가]</b></u> </span></p>
-
 <h4><span style="background-color: #dddddd;"><b>✔백년의 봄날은 가고</b></span></h4>
 <ul style="list-style-type: disc;">
 <li>출시일: 2022년 5월</li>
@@ -175,9 +171,7 @@ thumbnail: "/images/64/ZSIJLSGpBvuUwh68AHQreURqRF-2xvjOwo__Tm4sRy6XZQkwQ979J-lQv
 <li>한글 지원: 있음</li>
 </ul>
 <p><figure class="imageblock alignCenter" height="197" width="350">
-
 <img height="197" src="/images/64/ZSIJLSGpBvuUwh68AHQreURqRF-2xvjOwo__Tm4sRy6XZQkwQ979J-lQvVOV1EJUZsGQG6PfGvHAnZpcHfndCQ.gif" width="350"/>
-
 <figcaption>닌텐도 스위치 추리게임 리스트</figcaption>
 </figure></p>
 <p style="color: #333333; text-align: start;"> </p>

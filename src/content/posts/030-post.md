@@ -15,29 +15,21 @@ thumbnail: "/images/30/img.jpg"
 <p style="font-size: 1.12em;"> </p>
 <p style="font-size: 1.12em;"> </p>
 <p><figure class="imageblock alignCenter" data-origin-height="506" data-origin-width="900">
-
 <img src="/images/30/img.jpg"/>
-
 <figcaption></figcaption>
 </figure></p>
 <p style="font-size: 1.12em;">엘사 피버</p>
 <p style="font-size: 1.12em;"> </p>
 <p><figure class="imageblock alignCenter" data-origin-height="506" data-origin-width="900">
-
 <img src="/images/30/img_1.jpg"/>
-
 <figcaption></figcaption>
 </figure><figure class="imageblock alignCenter" data-origin-height="506" data-origin-width="900">
-
 <img src="/images/30/img_2.jpg"/>
-
 <figcaption></figcaption>
 </figure></p>
 <p style="font-size: 1.12em;">엘사 여왕 파란색 긴소매</p>
 <p><figure class="imageblock alignCenter" data-origin-height="657" data-origin-width="712">
-
 <img src="/images/30/img_3.jpg"/>
-
 <figcaption></figcaption>
 </figure></p>
 <p style="font-size: 1.12em;">엘사 여왕 반팔 원피스</p>

@@ -14,20 +14,19 @@ thumbnail: "/images/61/edited_aasdf.jpg"
 <p>기다리는 동안 젤다의 전설 시리지의 시간 대별 순서를 정리해 보았습니다. </p>
 <p>젤다의전설 발매 순서 소개도 정리하였어요.<br/><br/><br/></p>
 <h3><b>1. 젤다의 전설 역사 시간순서 (타임라인)</b></h3>
-
 <table border="1" style="border-collapse: collapse; width: 100%; height: 170px;">
 <tbody>
 <tr style="height: 17px;">
 <td colspan="3" style="width: 99.9999%; height: 17px; text-align: center;"><b><br/>젤다의 전설 시간 순서<br/><br/></b></td>
 </tr>
 <tr style="height: 17px;">
-<td colspan="3" style="width: 99.9999%; height: 17px; text-align: center;"><span style="background-color: #f6e199; color: #000000;">사건: 천지창조</span></td>
+<td colspan="3" style="width: 99.9999%; height: 17px; text-align: center;"><span >사건: 천지창조</span></td>
 </tr>
 <tr style="height: 17px;">
 <td colspan="3" style="width: 99.9999%; height: 17px; text-align: center;"><b>스카이워드 소드</b></td>
 </tr>
 <tr style="height: 17px;">
-<td colspan="3" style="width: 99.9999%; height: 17px; text-align: center;"><span style="background-color: #f6e199;">사건: 하이랄왕국 건국</span></td>
+<td colspan="3" style="width: 99.9999%; height: 17px; text-align: center;"><span >사건: 하이랄왕국 건국</span></td>
 </tr>
 <tr style="height: 17px;">
 <td colspan="3" style="width: 99.9999%; height: 17px; text-align: center;"><b>이상한 모자</b></td>
@@ -36,7 +35,7 @@ thumbnail: "/images/61/edited_aasdf.jpg"
 <td colspan="3" style="width: 99.9999%; height: 17px; text-align: center;"><b>4개의 검</b></td>
 </tr>
 <tr style="height: 17px;">
-<td colspan="3" style="width: 99.9999%; height: 17px; text-align: center;"><span style="background-color: #f6e199;">사건: 하이랄 통일 전쟁</span></td>
+<td colspan="3" style="width: 99.9999%; height: 17px; text-align: center;"><span >사건: 하이랄 통일 전쟁</span></td>
 </tr>
 <tr style="height: 17px;">
 <td colspan="3" style="width: 99.9999%; height: 17px; text-align: center;"><b>시간의 오카리나</b></td>
@@ -46,14 +45,14 @@ thumbnail: "/images/61/edited_aasdf.jpg"
 <td colspan="2" style="width: 66.6666%; height: 17px; text-align: center;"><span style="background-color: #ffc9af;">사건: 용사 승리</span></td>
 </tr>
 <tr style="height: 17px;">
-<td style="width: 33.3333%; height: 17px; text-align: center;"><span style="background-color: #f6e199;">사건: 봉인 전쟁</span></td>
+<td style="width: 33.3333%; height: 17px; text-align: center;"><span >사건: 봉인 전쟁</span></td>
 <td style="width: 33.3333%; height: 17px; text-align: center;"><span style="background-color: #99cefa;">7년 전</span></td>
 <td style="width: 33.3333%; height: 17px; text-align: center;"><span style="background-color: #99cefa;">7년 후</span></td>
 </tr>
 <tr>
 <td style="width: 33.3333%; text-align: center;"><b>신들의 트라이포스</b></td>
 <td style="width: 33.3333%; text-align: center;"><b>무쥬라의 가면</b></td>
-<td style="width: 33.3333%; text-align: center;"><span style="background-color: #f6e199;">사건: 하이럴 수몰</span></td>
+<td style="width: 33.3333%; text-align: center;"><span >사건: 하이럴 수몰</span></td>
 </tr>
 <tr>
 <td style="width: 33.3333%; text-align: center;"><b>이상한 나무 열매</b></td>
@@ -68,14 +67,14 @@ thumbnail: "/images/61/edited_aasdf.jpg"
 <tr>
 <td style="width: 33.3333%; text-align: center;"><b>신들의 트라이포스2</b></td>
 <td rowspan="5" style="width: 33.3333%; text-align: center;"> </td>
-<td style="width: 33.3333%; text-align: center;"><span style="background-color: #f6e199;">사건: 신생 하이랄 왕국 건국</span></td>
+<td style="width: 33.3333%; text-align: center;"><span >사건: 신생 하이랄 왕국 건국</span></td>
 </tr>
 <tr>
 <td style="width: 33.3333%; text-align: center;"><b>트라이포스 삼총사</b></td>
 <td style="width: 33.3333%; text-align: center;"><b>대지의 기적</b></td>
 </tr>
 <tr>
-<td style="width: 33.3333%; text-align: center;"><span style="background-color: #f6e199;">사건: 하이랄 왕국 쇠퇴</span></td>
+<td style="width: 33.3333%; text-align: center;"><span >사건: 하이랄 왕국 쇠퇴</span></td>
 <td rowspan="3" style="width: 33.3333%; text-align: center;"> </td>
 </tr>
 <tr>
@@ -95,32 +94,15 @@ thumbnail: "/images/61/edited_aasdf.jpg"
 </tr>
 </tbody>
 </table>
-
 <p>원래는 개발팀에서도 뚜렷한 언급이 없었는데 공식 가이드북(<span style="background-color: #ffffff; color: #424242;">하이럴 히스토리아 젤다의 전설 대전)</span>이 발매 되면서 세계관 시간순서가 알려지게 되었다고 합니다. 하지만 이 설정도 다음 작품을 만드는데 필요하다면 언젠가 변경 될 수 있다는 모호한 멘트가 있었습니다. 개발팀에서는 새로운 고문서가 발견하여 새롭게 해석되었다고 생각해 달라는 멘트도 있었습니다. </p>
-
 <p>이후 닌텐도 공식 홈페이지에 젤다의 전설 시리즈 역사를 정리하는 페이지를 공개 하였습니다.  (일어, 영어 선택 가능)</p>
-
 <p><figure class="imageblock alignCenter">
-
 <img src="/images/61/edited_aasdf.jpg"/>
-
 <figcaption></figcaption>
 </figure></p>
-
-
 <p><a href="https://www.nintendo.co.jp/character/zelda/history/index.html" rel="noopener" target="_blank">https://www.nintendo.co.jp/character/zelda/history/index.html</a></p>
-<figure contenteditable="false" id="og_1676016825246"><a href="https://www.nintendo.co.jp/character/zelda/history/index.html" rel="noopener" target="_blank">
-<div class="og-image" style="background-image: url('https://scrap.kakaocdn.net/dn/bjXokM/hyRzpgcdHU/KZIVFstI0foio1vWzzpse0/img.png?width=1200&amp;height=630&amp;face=0_0_1200_630,https://scrap.kakaocdn.net/dn/HBxR1/hyRzon4wuZ/7Nk7hEPnTS7fotsR5iPZWk/img.png?width=758&amp;height=3265&amp;face=0_0_758_3265,https://scrap.kakaocdn.net/dn/PoByT/hyRzon4wtb/4lKd7Ww6qlIAiKrAKxtqkK/img.png?width=305&amp;height=211&amp;face=0_0_305_211');"> </div>
-<div class="og-text">
-<p class="og-title">HISTORY | ゼルダの伝説ポータル | Nintendo</p>
-<p class="og-desc">「ゼルダの伝説」シリーズの舞台となるハイラルの歴史をご紹介します。</p>
-<p class="og-host">www.nintendo.co.jp</p>
-</div>
-</a></figure>
-
+<p><a href="https://www.nintendo.co.jp/character/zelda/history/index.html" rel="noopener" target="_blank">관련 글: HISTORY | ゼルダの伝説ポータル | Nintendo</a></p>
 <p>젤다의 전설에 세계관적 시간 순서가 있다고는 하지만 플레이하는데도 문제가 되거나 신경쓰일 수준은 아니라고 생각합니다. 시간대 상관없이 마음에 드는 플레이해보고 싶은 젤다의 전설을 하시면 됩니다.</p>
-
-
 <h3><b>2. 젤다의 전설 시리즈 발매 순서</b></h3>
 <table border="1" style="border-collapse: collapse; width: 79.3023%; height: 397px;">
 <tbody>
@@ -224,7 +206,4 @@ thumbnail: "/images/61/edited_aasdf.jpg"
 </tr>
 </tbody>
 </table>
-
-
-
 </div>
