@@ -6,7 +6,7 @@ tags: ["포르자호라이즌6", "게임패스", "스팀", "레이싱게임"]
 slug: "포르자-호라이즌6-소식-스팀-구매-게임패스-비교"
 numericId: 71
 description: "포르자 호라이즌 6이 출시됐길래 정보를 찾아봤는데 스팀에서 살지 게임패스로 즐길지 고민이 생겨서 비교해 보았습니다."
-thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/2483190/header.jpg"
+thumbnail: "/images/71/header.jpg"
 ---
 
 <div class="contents_style">
@@ -17,7 +17,7 @@ thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/2483190/header.jpg"
 <h2>포르자 호라이즌 6 기본 소식</h2>
 
 <figure class="imageblock alignCenter">
-<img src="https://cdn.akamai.steamstatic.com/steam/apps/2483190/header.jpg" alt="포르자 호라이즌 6" />
+<img src="/images/71/header.jpg" alt="포르자 호라이즌 6" />
 <figcaption>포르자 호라이즌 6 — 배경은 일본 도쿄</figcaption>
 </figure>
 
@@ -28,11 +28,15 @@ thumbnail: "https://cdn.akamai.steamstatic.com/steam/apps/2483190/header.jpg"
 
 <h3>공식 런치 트레일러</h3>
 
-<p>
-  <a href="https://www.youtube.com/watch?v=c6O5J-8dz90" target="_blank" rel="noopener">
-    ▶ 포르자 호라이즌 6 — 공식 런치 트레일러 (YouTube)
-  </a>
-</p>
+<div class="video-wrap">
+  <iframe
+    src="https://www.youtube.com/embed/c6O5J-8dz90"
+    title="포르자 호라이즌 6 공식 런치 트레일러"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>
 
 <h2>스팀 구매 vs 게임패스 비교</h2>
 
@@ -73,7 +77,7 @@ Game Pass Ultimate: 월 13,900원
 <p>저는 일단 게임패스로 먼저 맛보고 진짜 오래 할 것 같으면 세일 때 스팀에서 구매하는 걸 고려해볼 것 같습니다.</p>
 <p>(포르자 시리즈는 출시 6개월~1년 후에 세일 때 많이 내리더라고요.)</p>
 
-<h2>포르자 호라이즌 시리즈 연혁</h2>
+<h2>포르자 호라이즌 시리즈 연혁 및 배경 나라</h2>
 
 <p>포르자 호라이즌을 처음 접한 분들을 위해 시리즈 역사도 간단히 정리해 봤어요.</p>
 <p>포르자 모터스포츠(서킷 레이싱)의 스핀오프로 2012년에 시작된 시리즈입니다. 실제 자동차를 실감나게 운전하는 시뮬레이션 느낌을 유지하면서 오픈 월드에서 자유롭게 달리는 아케이드 게임성을 합친 것이 특징이에요.</p>

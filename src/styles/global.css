@@ -233,6 +233,25 @@ img {
   letter-spacing: 0.04em;
 }
 
+/* ── YouTube embed ──────────────────────── */
+.video-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  margin: 1.5rem 0;
+  max-width: var(--content-max);
+}
+
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* ── Utility ────────────────────────────── */
 .visually-hidden {
   position: absolute;
