@@ -1,9 +1,5 @@
 # Cloudflare Pages redirects
-
-# Trailing slash 제거 (SEO: 중복 페이지 방지)
-/entry/:slug/     /entry/:slug     301
-/category/:cat/   /category/:cat   301
-/privacy/         /privacy         301
+# Trailing slash은 canonical 태그로 처리 (Pages 내부 동작과 충돌 방지)
 
 # Legacy sitemap/rss → new sitemap
 /sitemap.xml  /sitemap-index.xml  301
