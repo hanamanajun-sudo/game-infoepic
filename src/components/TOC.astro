@@ -1,25 +1,38 @@
 ---
-export interface Props {
-  headings: Array<{ depth: number; slug: string; text: string }>;
-}
-const { headings } = Astro.props;
-const filtered = headings.filter(h => h.depth === 2 || h.depth === 3);
+// Client-side TOC — reads IDs injected by rehype-slug at build time
+// Works for both Markdown ## headings and raw HTML <h2>/<h3> tags
 ---
-{filtered.length > 1 && (
-  <nav class="toc" aria-label="목차">
-    <div class="toc-header">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h12M3 18h8"/></svg>
-      목차
-    </div>
-    <ol class="toc-list">
-      {filtered.map(h => (
-        <li class:list={['toc-item', { 'toc-h3': h.depth === 3 }]}>
-          <a href={`#${h.slug}`}>{h.text}</a>
-        </li>
-      ))}
-    </ol>
-  </nav>
-)}
+<nav class="toc" id="toc-nav" aria-label="목차" style="display:none">
+  <div class="toc-header">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h12M3 18h8"/></svg>
+    목차
+  </div>
+  <ol class="toc-list" id="toc-list"></ol>
+</nav>
+
+<script>
+  (function () {
+    const content = document.querySelector('.post-content');
+    const nav = document.getElementById('toc-nav');
+    const list = document.getElementById('toc-list');
+    if (!content || !nav || !list) return;
+
+    const valid = Array.from(content.querySelectorAll('h2, h3')).filter(h => h.id);
+    if (valid.length < 2) return;
+
+    valid.forEach(h => {
+      const li = document.createElement('li');
+      li.className = h.tagName === 'H3' ? 'toc-item toc-h3' : 'toc-item';
+      const a = document.createElement('a');
+      a.href = `#${h.id}`;
+      a.textContent = h.textContent.trim();
+      li.appendChild(a);
+      list.appendChild(li);
+    });
+
+    nav.style.display = '';
+  })();
+</script>
 
 <style>
 .toc {
@@ -43,14 +56,9 @@ const filtered = headings.filter(h => h.depth === 2 || h.depth === 3);
 
 .toc-list {
   list-style: none;
-  counter-reset: toc;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-}
-
-.toc-item {
-  counter-increment: toc;
 }
 
 .toc-item a {

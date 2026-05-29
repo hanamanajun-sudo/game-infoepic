@@ -14,10 +14,9 @@ export interface Props {
   thumbnail?: string;
   slug: string;
   numericId: number;
-  headings?: Array<{ depth: number; slug: string; text: string }>;
 }
 
-const { title, description, date, category, tags = [], thumbnail, slug, numericId, headings = [] } = Astro.props;
+const { title, description, date, category, tags = [], thumbnail, slug, numericId } = Astro.props;
 
 const formattedDate = new Date(date).toLocaleDateString('ko-KR', {
   year: 'numeric', month: 'long', day: 'numeric',
@@ -115,8 +114,8 @@ const jsonLd = JSON.stringify([
         </div>
       )}
 
-      <!-- Table of Contents -->
-      <TOC headings={headings} />
+      <!-- Table of Contents (client-side, reads from rehype-slug IDs) -->
+      <TOC />
 
       <!-- Content -->
       <div class="post-content">
