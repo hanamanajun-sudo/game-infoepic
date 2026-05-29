@@ -28,16 +28,15 @@ const encodedTitle = encodeURIComponent(title);
     <span>X</span>
   </a>
 
-  <!-- 카카오톡 -->
-  <a class="share-btn share-kakao"
-     href={`https://sharer.kakao.com/talk/friends/picker/link?app_key=YOUR_APP_KEY&text=${encodedTitle}&url=${encodedUrl}`}
-     target="_blank" rel="noopener" aria-label="카카오톡으로 공유"
-     id="kakaoShareBtn" data-title={title} data-url={url}>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 3C6.48 3 2 6.48 2 10.8c0 2.73 1.63 5.13 4.1 6.6L5 21l4.5-2.7c.82.18 1.65.3 2.5.3 5.52 0 10-3.48 10-7.8C22 6.48 17.52 3 12 3z"/>
+  <!-- 모바일 공유 (Web Share API) -->
+  <button class="share-btn share-native" id="nativeShareBtn" aria-label="공유하기"
+          data-title={title} data-url={url} hidden>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+      <path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/>
     </svg>
-    <span>카카오</span>
-  </a>
+    <span>공유하기</span>
+  </button>
 </div>
 
 <div id="copyToast" class="copy-toast" aria-live="polite" hidden>링크가 복사됐습니다!</div>
@@ -86,8 +85,8 @@ const encodedTitle = encodeURIComponent(title);
 .share-twitter { color: #000; }
 .share-twitter:hover { background: #000; border-color: #000; color: #fff; }
 
-.share-kakao { color: #3A1D1D; }
-.share-kakao:hover { background: #FEE500; border-color: #FEE500; color: #3A1D1D; }
+.share-native { color: var(--color-text); }
+.share-native:hover { background: var(--color-secondary); border-color: var(--color-secondary); color: #fff; }
 
 .copy-toast {
   position: fixed;
@@ -114,6 +113,12 @@ const encodedTitle = encodeURIComponent(title);
 <script>
 const copyBtn = document.getElementById('copyBtn');
 const toast = document.getElementById('copyToast');
+const nativeBtn = document.getElementById('nativeShareBtn');
+
+// Show native share button only if Web Share API is supported
+if (navigator.share) {
+  nativeBtn?.removeAttribute('hidden');
+}
 
 copyBtn?.addEventListener('click', async () => {
   const url = copyBtn.dataset.url ?? window.location.href;
@@ -130,6 +135,17 @@ copyBtn?.addEventListener('click', async () => {
   if (toast) {
     toast.removeAttribute('hidden');
     setTimeout(() => toast.setAttribute('hidden', ''), 2500);
+  }
+});
+
+nativeBtn?.addEventListener('click', async () => {
+  try {
+    await navigator.share({
+      title: nativeBtn.dataset.title,
+      url: nativeBtn.dataset.url ?? window.location.href,
+    });
+  } catch (e) {
+    // User cancelled — no action needed
   }
 });
 </script>
