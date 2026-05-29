@@ -1,3 +1,6 @@
 # Cloudflare Pages redirects
 # Numeric ID redirects are handled by [id].astro HTML pages
 # Trailing slash is handled natively by Cloudflare Pages
+
+/sitemap.xml  /sitemap-index.xml  301
+/rss          /sitemap-index.xml  301
