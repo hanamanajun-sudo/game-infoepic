@@ -3,7 +3,7 @@ title: "[모여봐요동물의숲] 일본 팜플렛/소개책자"
 date: "2020-03-20"
 category: "스위치게임/모여라동물의숲"
 tags: []
-slug: "[모여봐요동물의숲]-일본-팜플렛_소개책자"
+slug: "모여라동물의숲-일본-팜플렛소개책자"
 numericId: 22
 description: "닌텐도 동물의 숲 일본어 팜플렛이에요."
 thumbnail: "/images/22/img.jpg"

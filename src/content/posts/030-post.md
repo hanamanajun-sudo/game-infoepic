@@ -3,7 +3,7 @@ title: "[동물의숲]겨울왕국 엘사 의상(도안 장인)-퍼옴"
 date: "2020-03-31"
 category: "스위치게임/모여라동물의숲"
 tags: []
-slug: "[동물의숲]겨울왕국-엘사-의상(도안-장인)-퍼옴"
+slug: "동물의숲겨울왕국-엘사-의상도안-장인-퍼옴"
 numericId: 30
 description: "필요하신 분들은 아래 출처로 가세요"
 thumbnail: "/images/30/img.jpg"

@@ -3,7 +3,7 @@ title: "장황 현옥 마무리글"
 date: "2020-04-08"
 category: ""
 tags: []
-slug: "장황-현옥-마무리글"
+slug: "에반게리온-작가는-우익-험한-인가-데프콘-님-손절-이후-찾아봄"
 numericId: 33
 description: ""
 thumbnail: ""

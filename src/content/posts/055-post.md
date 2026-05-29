@@ -3,7 +3,7 @@ title: "게임 맵 크기 순위 (오픈월드, 온라인 게임 총출동 1~45)
 date: "2022-04-19"
 category: "게임 이슈"
 tags: []
-slug: "게임-맵-크기-순위-(오픈월드,-온라인-게임-총출동-1~45)"
+slug: "게임-맵-크기-순위-오픈월드-온라인-게임-총출동-145"
 numericId: 55
 description: "밑으로 갈수록 점점 커집니다."
 thumbnail: "/images/55/blob.jpg"

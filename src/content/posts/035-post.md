@@ -3,7 +3,7 @@ title: "모여봐요 동물의숲 조작 키(왕 초보 조작법 꿀팁)"
 date: "2020-05-01"
 category: "스위치게임/모여라동물의숲"
 tags: []
-slug: "모여봐요-동물의숲-조작-키(왕-초보-조작법-꿀팁)"
+slug: "동물의숲-조작-키"
 numericId: 35
 description: "L버튼 밑에 방아쇠 버튼이 ZL"
 thumbnail: "/images/35/img.jpg"

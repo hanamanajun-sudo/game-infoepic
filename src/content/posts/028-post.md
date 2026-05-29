@@ -3,7 +3,7 @@ title: "링피트-신규 컨텐츠[리듬게임]업데이트"
 date: "2020-03-27"
 category: "스위치게임"
 tags: []
-slug: "링피트-신규-컨텐츠[리듬게임]업데이트"
+slug: "링피트리듬게임-신규-컨텐츠-업데이트"
 numericId: 28
 description: "링피트 어드벤처에서 무료 컨텐츠 업데이트 내용 공개 했는데"
 thumbnail: "/images/28/img.png"

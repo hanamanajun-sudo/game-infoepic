@@ -3,7 +3,7 @@ title: "[닌텐도 스위치] 추리게임 리스트 12개"
 date: "2024-04-04"
 category: "스위치게임"
 tags: []
-slug: "[닌텐도-스위치]-추리게임-리스트-12개"
+slug: "닌텐도-스위치-추리게임-추천-3종"
 numericId: 64
 description: "와이프가 딸과 함께닌텐도 스위치에서추리게임을 하고 싶다고 해서 찾아보고 정리해 보았습니다."
 thumbnail: "/images/64/ZSIJLSGpBvuUwh68AHQreURqRF-2xvjOwo__Tm4sRy6XZQkwQ979J-lQvVOV1EJUZsGQG6PfGvHAnZpcHfndCQ.gif"

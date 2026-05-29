@@ -3,7 +3,7 @@ title: "2020 구글플레이 올해의 게임 (추천)"
 date: "2020-12-01"
 category: "모바일게임"
 tags: []
-slug: "2020-구글플레이-올해의-게임-(추천)"
+slug: "2020-구글플레이-올해의-게임-추천"
 numericId: 47
 description: "구글플레이에서 선정한 올해의 게임"
 thumbnail: "/images/47/img_5.webp"

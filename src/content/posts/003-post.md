@@ -3,7 +3,7 @@ title: "'딸기 맛' 코카콜라 후기 (솔직 맛 평가)"
 date: "2020-02-05"
 category: ""
 tags: []
-slug: "'딸기-맛'-코카콜라-후기-(솔직-맛-평가)"
+slug: "딸기-맛-코카콜라-후기-솔직-맛-평가"
 numericId: 3
 description: "한정판으로 1월 부터 판매를 한다고 합니다. 기간 한정이라고 하는데 어느정도 할지는"
 thumbnail: "/images/3/img.png"

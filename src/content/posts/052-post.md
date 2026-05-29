@@ -3,7 +3,7 @@ title: "닌텐도 블루투스 헤드폰, 이어폰 연결 업데이트 이슈"
 date: "2021-09-15"
 category: "게임 이슈"
 tags: []
-slug: "닌텐도-블루투스-헤드폰,-이어폰-연결-업데이트-이슈"
+slug: "닌텐도-블루투스-헤드폰-이어폰-연결-업데이트-이슈"
 numericId: 52
 description: "스위치에서 역대급 업데이트 소식입니다."
 thumbnail: "/images/52/img.png"

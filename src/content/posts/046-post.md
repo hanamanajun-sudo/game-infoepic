@@ -3,7 +3,7 @@ title: "플스5 가격 (실물 사이즈/언박싱 영상 모음)"
 date: "2020-11-16"
 category: "게임 이슈"
 tags: []
-slug: "플스5-가격-(실물-사이즈_언박싱-영상-모음)"
+slug: "플스5-가격-실물-사이즈언박싱-영상-모음"
 numericId: 46
 description: "플스5 국내 출시일 11월 12일 (한국 1차 출시국에 포함)"
 thumbnail: "/images/46/blob.jpg"

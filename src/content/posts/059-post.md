@@ -3,7 +3,7 @@ title: "마인크래프트 체력 회복 방법 (마크 초보팁)"
 date: "2022-08-15"
 category: "스위치게임/마인크래프트"
 tags: []
-slug: "마인크래프트-체력-회복-방법-(마크-초보팁)"
+slug: "마인크래프트-체력-회복-방법-마크-초보팁"
 numericId: 59
 description: "닌텐도 스위치 버전의 마크를 새로 구입해서 하고 있어요."
 thumbnail: "/images/59/edited_Hungerscreen.webp"

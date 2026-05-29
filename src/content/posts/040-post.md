@@ -3,7 +3,7 @@ title: "스위치 한국 여름 세일 정보(2020년)"
 date: "2020-08-03"
 category: "스위치게임"
 tags: []
-slug: "스위치-한국-여름-세일-정보(2020년)"
+slug: "스위치-한국-여름-세일-정보2020년"
 numericId: 40
 description: "닌텐도에서 처음으로 제대로된 세일을 하네요. (해외에 비해서는 부족하지만 그래도)"
 thumbnail: "/images/40/img.png"

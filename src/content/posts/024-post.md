@@ -3,7 +3,7 @@ title: "[동물의숲]한국은 참 이상한 나라입니다."
 date: "2020-03-23"
 category: "스위치게임/모여라동물의숲"
 tags: []
-slug: "[동물의숲]한국은-참-이상한-나라입니다"
+slug: "동물의숲한국은-참-이상한-나라입니다"
 numericId: 24
 description: "이 이상한 나라 사람들 살아가는 방식이 늘 이렇습니다."
 thumbnail: "/images/24/img.png"

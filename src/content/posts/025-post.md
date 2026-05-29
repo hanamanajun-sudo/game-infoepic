@@ -3,7 +3,7 @@ title: "[모동숲]헤쳐모여 복무의 숲"
 date: "2020-03-23"
 category: "스위치게임/모여라동물의숲"
 tags: []
-slug: "[모동숲]헤쳐모여-복무의-숲"
+slug: "모동숲헤쳐모여-복무의-숲"
 numericId: 25
 description: "모여봐요 동물의 숲을 하며 PTSD를 톡톡 건드려보는 사람들 모음"
 thumbnail: "/images/25/img.jpg"

@@ -3,7 +3,7 @@ title: "레고 빌더스 조니-스위치 발매 소식 (LEGO Builder 's Journey
 date: "2021-06-02"
 category: "스위치게임"
 tags: []
-slug: "49"
+slug: "레고-빌더스-조니-스위치-발매-소식-LEGO-Builder-s-Journey"
 numericId: 49
 description: "애플 아케이드 게임에서 이미 발매 된 것인데 이번에 스위치랑 스팀 등에서  나온다고 합니다."
 thumbnail: "/images/49/img.jpg"

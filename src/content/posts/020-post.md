@@ -3,7 +3,7 @@ title: "롤토체스 다운 하기(롤토체스 찐 제목/추천 사이트)"
 date: "2020-03-20"
 category: "모바일게임"
 tags: []
-slug: "롤토체스-다운-하기(롤토체스-찐-제목_추천-사이트)"
+slug: "롤토체스-다운-하기롤토체스-찐-제목추천-사이트"
 numericId: 20
 description: "리그오브 레전드의 라이엇이 롤토체스(전략적 팀 전투-TeamFight Tactics :TFT)"
 thumbnail: ""

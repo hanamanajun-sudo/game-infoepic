@@ -3,7 +3,7 @@ title: "[동물의숲] 겨울왕국-안나의상 펌(금손 작품)"
 date: "2020-03-31"
 category: "스위치게임/모여라동물의숲"
 tags: []
-slug: "[동물의숲]-겨울왕국-안나의상-펌(금손-작품)"
+slug: "동물의숲-겨울왕국-안나의상-펌금손-작품"
 numericId: 31
 description: "저장용으로 퍼왔어요."
 thumbnail: "/images/31/img.jpg"

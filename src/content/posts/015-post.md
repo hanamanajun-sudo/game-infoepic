@@ -3,7 +3,7 @@ title: "[모동숲] 포인트 교환 선물 등장!(사진)"
 date: "2020-03-19"
 category: "스위치게임/모여라동물의숲"
 tags: []
-slug: "[모동숲]-포인트-교환-선물-등장!(사진)"
+slug: "모동숲-포인트-교환-선물-등장사진"
 numericId: 15
 description: "플레티너 포인트 교환 굿즈 등장 (동물의 숲)-닌텐도 사이트 발췌"
 thumbnail: "/images/15/img.jpg"
