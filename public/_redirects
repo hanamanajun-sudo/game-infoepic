@@ -1,6 +1,10 @@
 # Cloudflare Pages redirects
-# Numeric ID redirects are handled by [id].astro HTML pages
-# Trailing slash is handled natively by Cloudflare Pages
 
+# Trailing slash 제거 (SEO: 중복 페이지 방지)
+/entry/:slug/     /entry/:slug     301
+/category/:cat/   /category/:cat   301
+/privacy/         /privacy         301
+
+# Legacy sitemap/rss → new sitemap
 /sitemap.xml  /sitemap-index.xml  301
 /rss          /sitemap-index.xml  301
