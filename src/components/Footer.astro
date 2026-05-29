@@ -9,6 +9,9 @@ const year = new Date().getFullYear();
       <span>게임인포에픽</span>
     </div>
     <p class="footer-desc">닌텐도 스위치 게임 정보 블로그</p>
+    <nav class="footer-links">
+      <a href="/privacy">개인정보처리방침</a>
+    </nav>
     <p class="footer-copy">&copy; {year} game.infoepic.com · 무단 전재 및 재배포 금지</p>
   </div>
 </footer>
@@ -40,6 +43,21 @@ const year = new Date().getFullYear();
 
 .footer-desc {
   font-size: 0.85rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.82rem;
+}
+
+.footer-links a {
+  color: rgba(255,255,255,0.55);
+  transition: color 0.15s;
+}
+
+.footer-links a:hover {
+  color: var(--color-secondary);
 }
 
 .footer-copy {

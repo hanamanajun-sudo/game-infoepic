@@ -2,6 +2,8 @@
 import BaseLayout from './BaseLayout.astro';
 import TOC from '../components/TOC.astro';
 import Icons from '../components/Icons.astro';
+import ShareButtons from '../components/ShareButtons.astro';
+import RelatedPosts from '../components/RelatedPosts.astro';
 
 export interface Props {
   title: string;
@@ -25,24 +27,37 @@ const canonical = `/entry/${slug}`;
 const categoryTop = category?.split('/')[0] || '';
 const siteUrl = 'https://game.infoepic.com';
 
-const jsonLd = JSON.stringify({
-  '@context': 'https://schema.org',
-  '@type': 'BlogPosting',
-  headline: title,
-  description: description || '',
-  image: thumbnail ? `${siteUrl}${thumbnail}` : undefined,
-  datePublished: isoDate,
-  dateModified: isoDate,
-  author: { '@type': 'Organization', name: '게임인포에픽', url: siteUrl },
-  publisher: {
-    '@type': 'Organization',
-    name: '게임인포에픽',
-    url: siteUrl,
-    logo: { '@type': 'ImageObject', url: `${siteUrl}/favicon.svg` },
+const postUrl = `${siteUrl}${canonical}`;
+
+const jsonLd = JSON.stringify([
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: title,
+    description: description || '',
+    image: thumbnail ? `${siteUrl}${thumbnail}` : `${siteUrl}/og-default.png`,
+    datePublished: isoDate,
+    dateModified: isoDate,
+    author: { '@type': 'Organization', name: '게임인포에픽', url: siteUrl },
+    publisher: {
+      '@type': 'Organization',
+      name: '게임인포에픽',
+      url: siteUrl,
+      logo: { '@type': 'ImageObject', url: `${siteUrl}/favicon.svg` },
+    },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
+    keywords: tags.join(', '),
   },
-  mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}${canonical}` },
-  keywords: tags.join(', '),
-});
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '홈', item: siteUrl },
+      ...(categoryTop ? [{ '@type': 'ListItem', position: 2, name: categoryTop, item: `${siteUrl}/category/${encodeURIComponent(categoryTop)}` }] : []),
+      { '@type': 'ListItem', position: categoryTop ? 3 : 2, name: title, item: postUrl },
+    ],
+  },
+]);
 ---
 <BaseLayout
   title={title}
@@ -108,8 +123,11 @@ const jsonLd = JSON.stringify({
         <slot />
       </div>
 
-      <!-- Numeric ID canonical note (hidden, for SEO) -->
-      <link rel="canonical" href={`${siteUrl}${canonical}`} />
+      <!-- Share buttons -->
+      <ShareButtons title={title} url={postUrl} />
+
+      <!-- Related posts -->
+      <RelatedPosts currentSlug={slug} category={category} />
     </div>
   </article>
 </BaseLayout>
