@@ -6,7 +6,7 @@ tags: ["모동숲", "날씨연동"]
 slug: "동물의숲-날씨-연동-여부현실반영-우연"
 numericId: 53
 description: "모여봐요 동물의숲 날씨가 현실 날씨와 연동되는지 궁금해서 찾아봤습니다. 우연일까요, 실제 반영일까요?"
-thumbnail: ""
+thumbnail: "/images/53/img.jpg"
 ---
 
 <div class="contents_style">
@@ -14,6 +14,10 @@ thumbnail: ""
 <p>모여봐요 동물의숲(모동숲)에서는 날씨 시스템이 존재합니다.</p>
 <p>현실에서 비가 오거나 구름이 끼었을 때 게임 내에서도 동일한 날씨가 나타나는 현상을 자주 목격했다는 분들이 많은데요.</p>
 <p>이것이 우연이라기보다는 일기예보를 반영한 것인지 궁금해져 찾아보았습니다.</p>
+
+<figure class="imageblock alignCenter">
+<img src="/images/53/img.jpg" alt="모동숲 날씨" />
+</figure>
 
 <h2>모동숲 날씨는 현실과 연동될까?</h2>
 
@@ -25,6 +29,10 @@ thumbnail: ""
 <p>다만 장마시즌이나 달의 변화 같은 계절적 요소는 예측 가능하며 게임에 반영되어, 이로 인해 연동되는 것처럼 보일 수 있습니다.</p>
 <p>날씨는 1시간마다 변하며 급격하게 변하지 않고 점진적으로 변화합니다.</p>
 <p>비오는 날에는 게임 내 꽃에 물을 줄 필요가 없으니 참고하세요!</p>
+
+<figure class="imageblock alignCenter">
+<img src="/images/53/img_1.jpg" alt="모동숲 날씨 화면" />
+</figure>
 
 <h2>게임 내 일기예보</h2>
 
