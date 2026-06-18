@@ -19,7 +19,7 @@ thumbnail: ""
 
 <h2>스위치 기본 화면 녹화하는 방법</h2>
 
-<p>&lt;img src="assets/thumbnails/illust_001_00002_.jpg" alt="illustration" style="max-width:100%;border-radius:8px;margin:16px 0"&gt;</p>
+<p>&lt;img src="assets/thumbnails/illust_001_00001_.jpg" alt="illustration" style="max-width:100%;border-radius:8px;margin:16px 0"&gt;</p>
 
 <p>스위치에서 화면을 녹화하는 건 생각보다 간단해요. 왼쪽 조이콘에 있는 <b>네모난 캡처 버튼(🆒)</b> 을 누르면 돼요.</p>
 
@@ -35,7 +35,7 @@ thumbnail: ""
 
 <ol><li>홈 버튼(🆑) 눌러서 메인 화면으로 이동</li><li>맨 아래 줄에 있는 <b>앨범</b> 아이콘 선택</li><li>영상은 오른쪽 위에 필름 아이콘이 표시됨 (사진과 구분 가능)</li><li>영상을 선택하고 <b>편집 및 게시</b> → <b>트리밍</b>에서 앞뒤를 잘라낼 수 있음</li></ol>
 
-<p>&lt;img src="assets/thumbnails/illust_002_00002_.jpg" alt="illustration" style="max-width:100%;border-radius:8px;margin:16px 0"&gt;</p>
+<p>&lt;img src="assets/thumbnails/illust_002_00001_.jpg" alt="illustration" style="max-width:100%;border-radius:8px;margin:16px 0"&gt;</p>
 
 <h2>30초 제한: 왜 30초일까?</h2>
 
@@ -61,7 +61,7 @@ thumbnail: ""
 
 <p>캡처카드는 가격대가 다양해서 부담 없는 제품도 있어요. 유튜브에 게임 영상을 올리거나, 친구한테 자랑할 멋진 플레이 영상을 남기고 싶다면 캡처카드 하나 장만해 보는 게 좋아요.</p>
 
-<p>&lt;img src="assets/thumbnails/illust_003_00002_.jpg" alt="illustration" style="max-width:100%;border-radius:8px;margin:16px 0"&gt;</p>
+<p>&lt;img src="assets/thumbnails/illust_003_00001_.jpg" alt="illustration" style="max-width:100%;border-radius:8px;margin:16px 0"&gt;</p>
 
 <h3>방법 3: 스마트폰으로 화면 직접 촬영</h3>
 
