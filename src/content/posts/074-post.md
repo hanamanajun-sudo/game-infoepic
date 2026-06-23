@@ -2,9 +2,10 @@
 title: "닌텐도 스위치 화면 녹화 방법 — 30초 제한 극복하고 더 길게 저장하는 법"
 slug: nintendo-switch-screen-recording-guide
 description: "닌텐도 스위치 기본 화면 녹화 기능과 30초 제한을 극복하는 방법 총정리. 캡처 버튼 사용법, 화질 설정, 녹화 시간 늘리기, 캡처카드 활용법까지."
-date: 2026-06-16
-category: [스위치 공략/팁]
-tags: [닌텐도스위치, 화면녹화, 스위치팁, 게임녹화, 캡처보드, 스위치활용법]
+date: "2026-06-16"
+category: "스위치 공략"
+tags: ["닌텐도스위치", "화면녹화", "스위치팁", "게임녹화", "캡처보드", "스위치활용법"]
+numericId: 74
 thumbnail: "assets/thumbnails/blog_thumb_00001_.jpg"
 excerpt: "스위치 화면 녹화 30초 제한 해결. 기본 캡처 기능부터 캡처카드까지 실제 사용 기준으로 정리."
 lang: ko
