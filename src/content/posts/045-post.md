@@ -12,7 +12,7 @@ thumbnail: "https://scrap.kakaocdn.net/dn/iYxyW/hyHrt6Im3m/7lVH8Wgji51e1g1zYSN72
 <div class="contents_style">
 <p>닌텐도 스위치는</p>
 <p>젤다의전설 야생의숨결의 100년 전 이야기를 다룬 젤다의 전설이 무쌍이 되어 발매 된다는 발표를 했다. </p>
-<p><img height="484" src="https://scrap.kakaocdn.net/dn/iYxyW/hyHrt6Im3m/7lVH8Wgji51e1g1zYSN721/img.jpg?width=1280&amp;height=720&amp;face=0_0_1280_720" width="860"/></p>
+<p><img height="484" src="https://scrap.kakaocdn.net/dn/iYxyW/hyHrt6Im3m/7lVH8Wgji51e1g1zYSN721/img.jpg?width=1280&amp;height=720&amp;face=0_0_1280_720" width="860" alt="젤다무쌍 대재앙의시대 공식 발표 이미지"/></p>
 <figure><iframe allowfullscreen="true" frameborder="0" height="484" src="https://www.youtube.com/embed/HBO5nSPHAYc" width="860"></iframe>
 <figcaption></figcaption>
 </figure>
@@ -22,25 +22,25 @@ thumbnail: "https://scrap.kakaocdn.net/dn/iYxyW/hyHrt6Im3m/7lVH8Wgji51e1g1zYSN72
 <p>6만4800원</p>
 <p>한글화 되어 발매 한다. </p>
 <p><figure class="imageblock alignCenter" data-origin-height="1080" data-origin-width="1920">
-<img src="/images/45/img.png"/>
+<img src="/images/45/img.png" alt="젤다무쌍 대재앙의시대 게임 화면"/>
 <figcaption></figcaption>
 </figure></p>
 <p>이번 젤다무쌍에는 주인공 링크 그리고 4명의 영걸</p>
 <p>미파, 리발, 다르케르, 우르보사가 함께 등장한다. </p>
 <p><figure class="imageblock alignCenter" data-origin-height="1080" data-origin-width="1920">
-<img src="/images/45/img_1.png"/>
+<img src="/images/45/img_1.png" alt="젤다무쌍 대재앙의시대 미파 캐릭터"/>
 <figcaption></figcaption>
 </figure><figure class="imageblock alignCenter" data-origin-height="1080" data-origin-width="1920">
-<img src="/images/45/img_2.png"/>
+<img src="/images/45/img_2.png" alt="젤다무쌍 대재앙의시대 리발 캐릭터"/>
 <figcaption></figcaption>
 </figure><figure class="imageblock alignCenter" data-origin-height="1080" data-origin-width="1920">
-<img src="/images/45/img_3.png"/>
+<img src="/images/45/img_3.png" alt="젤다무쌍 대재앙의시대 다르케르 캐릭터"/>
 <figcaption></figcaption>
 </figure><figure class="imageblock alignCenter" data-origin-height="1080" data-origin-width="1920">
-<img src="/images/45/img_4.png"/>
+<img src="/images/45/img_4.png" alt="젤다무쌍 대재앙의시대 우르보사 캐릭터"/>
 <figcaption></figcaption>
 </figure><figure class="imageblock alignCenter" data-origin-height="1080" data-origin-width="1920">
-<img src="/images/45/img_5.png"/>
+<img src="/images/45/img_5.png" alt="젤다무쌍 대재앙의시대 스크린샷"/>
 <figcaption></figcaption>
 </figure></p>
 <p>이들 4명의 영걸의 조작이 가능한 캐릭터로 나오는데 아직 마음속에 남아있는 미파와의 스토리가 더 있을 것 같아</p>

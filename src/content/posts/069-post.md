@@ -18,7 +18,7 @@ thumbnail: "/images/69/images.jpg"
 <h3><span style="background-color: #ffc9af;"><b>사이버펑크 게임, 애니 즐기는 순서</b></span></h3>
 <p> <b>많</b>은 사람들이 추천하는 순서는 애니메이션을 먼저 보라는 것이였다.</p>
 <p><figure class="imageblock alignCenter">
-<img src="/images/69/images.jpg"/>
+<img src="/images/69/images.jpg" alt="사이버펑크 엣지러너 애니메이션 포스터"/>
 <figcaption></figcaption>
 </figure></p>
 <h4><span >애니를 먼저</span> 보라는 이유를 모아보았다.</h4>
@@ -29,7 +29,7 @@ thumbnail: "/images/69/images.jpg"
 <li>이유4. 애니가 더 과거 이야기 이니 시간 순서로 자연스럽게 즐길수 있음</li>
 </ul>
 <p><figure class="imageblock alignCenter" height="263" width="500">
-<img height="263" src="/images/69/social-thumbnail-ko-94315d78.jpg" width="500"/>
+<img height="263" src="/images/69/social-thumbnail-ko-94315d78.jpg" width="500" alt="사이버펑크 2077 게임 공식 이미지"/>
 <figcaption></figcaption>
 </figure></p>
 <h4><span style="background-color: #9feec3;">게임을 먼저</span>하고 애니를 보는게 좋다고 추천하는 이유를 모아보면</h4>
