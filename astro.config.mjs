@@ -4,7 +4,7 @@ import rehypeSlug from 'rehype-slug';
 
 export default defineConfig({
   site: 'https://game.infoepic.com',
-  trailingSlash: 'never',
+  trailingSlash: 'always',
   integrations: [sitemap()],
   output: 'static',
   markdown: {

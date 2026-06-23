@@ -22,7 +22,7 @@ const formattedDate = new Date(date).toLocaleDateString('ko-KR', {
   year: 'numeric', month: 'long', day: 'numeric',
 });
 const isoDate = new Date(date).toISOString();
-const canonical = `/entry/${slug}`;
+const canonical = `/entry/${slug}/`;
 const categoryTop = category?.split('/')[0] || '';
 const siteUrl = 'https://game.infoepic.com';
 
